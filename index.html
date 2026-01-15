@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <p class="title">😎Rock paper scissor game 😎</p>
+
+    <!-- rock  -->
+
+    <button class="b-c" onclick="
+      
+     res('rock');
+
+      "> <img src="images/rock.jpg" class="rock" alt=""></button>
+
+      <!-- paper -->
+    <button  class="b-c" onclick="
+      
+       res('paper');
+      
+           "><img src="images/paper.png" class="paper" alt=""></button>
+
+<!-- scissor -->
+    <button class="b-c" onclick="
+     
+     res('scissor');
+     
+        "><img src="images/scissor2.png" class="scissor" alt=""></button>
+
+
+        <p class="p3 result"></p>
+        <p class="p2 result"></p>
+        <p class="p1 result" 
+         ></p>
+
+         <!-- reset button -->
+    <button onclick="
+        score.losses=0
+        score.ties=0
+        score.wins=0
+        
+      update();
+    " class="reset">reset score</button>    
+<!-- autoplay -->
+ <button class="reset" onclick="
+ autogame();
+ ">Autoplay</button>
+
+</div>
+</body>
+<script src="script.js"></script>
+
+</html>
+
+
+
+
